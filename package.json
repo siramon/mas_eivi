@@ -18,8 +18,8 @@
     "start": "parcel index.html",
     "build": "parcel build --public-url . index.html"
   },
-  "author": "roso",
-  "license": "ISC",
+  "author": "Rolf Sonderegger",
+  "license": "BSD-2-Clause",
   "repository": {
     "type": "git",
     "url": "https://github.com/siramon/mas_eivi.git"
