@@ -1,0 +1,27 @@
+{
+  "name": "mas-eivi",
+  "version": "0.0.1",
+  "description": "EiVi",
+  "main": "index.html",
+  "dependencies": {
+    "@types/proj4": "^2.5.0",
+    "cesium": "^1.66.0",
+    "ol": "^6.2.0",
+    "olcs": "^2.10.0",
+    "proj4": "^2.6.0"
+  },
+  "devDependencies": {
+    "parcel": "^2.0.0-alpha.3.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel index.html",
+    "build": "parcel build --public-url . index.html"
+  },
+  "author": "roso",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/siramon/mas_eivi.git"
+  }
+}

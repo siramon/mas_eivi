@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Using Parcel with OpenLayers</title>
+    <style>
+      #map {
+        width: 700px;
+        height: 500px;
+      }
+      #map3d {
+        width: 700px;
+        height: 500px;
+        position:absolute;
+        top: 0;
+        left: 750px;
+      }
+      #log {
+        height:400px;
+        overflow:scroll;
+      }
+    </style>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/proj4js/2.6.0/proj4.js"></script>
+    <script src="https://cesium.com/downloads/cesiumjs/releases/1.66/Build/Cesium/Cesium.js"></script>
+  </head>
+  <body>
+    <div id="map"></div>
+    <div id="map3d"></div>
+    <div id="mouse-position"></div>
+    <div onclick="window.enable3D();">enable 3d</div>
+    <script src="./index.js"></script>
+    <textarea id="log"></textarea>
+  </body>
+</html>
