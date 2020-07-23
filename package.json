@@ -11,17 +11,23 @@
     "proj4": "^2.6.0"
   },
   "devDependencies": {
-    "parcel": "^2.0.0-alpha.3.2"
+    "parcel": "^2.0.0-alpha.3.2",
+    "parcel-plugin-static-files-copy": "^2.3.1"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "parcel index.html",
-    "build": "parcel build --public-url . index.html"
+    "start": "parcel serve index.html",
+    "build": "parcel build index.html",
+    "prebuild": "rm -rf dist"
   },
   "author": "Rolf Sonderegger",
   "license": "BSD-2-Clause",
   "repository": {
     "type": "git",
     "url": "https://github.com/siramon/mas_eivi.git"
+  },
+  "staticFiles": {
+    "staticPath": "static",
+    "watcherGlob": "**"
   }
 }
